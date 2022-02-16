@@ -2,11 +2,6 @@
 
 class bgcontroller :public Actor
 {
-	D2D1_POINT_2F a[3] = {
-		{100,100},
-		{200,200},
-		{100,100}
-	};
 	void Tick()
 	{
 		SetLoc(WindowX / 2.0, WindowY / 2.0 + sin(SCENETIME * 5) * 100.0);
